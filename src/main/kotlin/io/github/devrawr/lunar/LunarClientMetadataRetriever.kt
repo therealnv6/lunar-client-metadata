@@ -5,10 +5,7 @@ import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.json.Json
 import java.net.URL
 
-internal const val lunarMetadataEndpoint =
-    "https://api.lunarclient%s.com/game/metadata"
-
-object LunarMetadataRetriever
+object LunarClientMetadataRetriever
 {
     @JvmStatic
     fun readMetadataAsText(
