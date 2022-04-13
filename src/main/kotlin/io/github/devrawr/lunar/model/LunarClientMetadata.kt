@@ -1,7 +1,7 @@
 package io.github.devrawr.lunar.model
 
 import io.github.devrawr.lunar.LunarClientMetadataRetriever
-import io.github.devrawr.lunar.lunarMetadataEndpoint
+import io.github.devrawr.lunar.LUNAR_METADATA_ENDPOINT
 import io.github.devrawr.lunar.model.blog.LunarClientBlogPost
 import io.github.devrawr.lunar.model.feature.LunarClientFeatureFlag
 import io.github.devrawr.lunar.model.integration.LunarClientIntegratedServer
@@ -47,7 +47,7 @@ data class LunarClientMetadata(
          * This method calls the [LunarClientMetadataRetriever.readMetadata] method
          * with [LunarClientMetadata] as type parameter.
          *
-         * This original method reads the metadata from the [lunarMetadataEndpoint]
+         * This original method reads the metadata from the [LUNAR_METADATA_ENDPOINT]
          * endpoint URL, which contains all data required to fill this class.
          */
         @JvmStatic

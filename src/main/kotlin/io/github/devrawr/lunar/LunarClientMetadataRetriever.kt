@@ -14,7 +14,7 @@ object LunarClientMetadataRetriever
     {
         val url = URL(
             String.format(
-                lunarMetadataEndpoint,
+                LUNAR_METADATA_ENDPOINT,
                 context.lowercase
             )
         )
@@ -23,7 +23,7 @@ object LunarClientMetadataRetriever
     }
 
     /**
-     * Read the metadata from the [lunarMetadataEndpoint] endpoint.
+     * Read the metadata from the [LUNAR_METADATA_ENDPOINT] endpoint.
      *
      * This method will automatically try to parse the
      * retrieved data from the server using the provided
