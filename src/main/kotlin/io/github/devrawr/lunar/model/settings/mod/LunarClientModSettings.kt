@@ -1,4 +1,4 @@
-package io.github.devrawr.lunar.model.settings
+package io.github.devrawr.lunar.model.settings.mod
 
 /**
  * @author GrowlyX
@@ -6,6 +6,5 @@ package io.github.devrawr.lunar.model.settings
  */
 @kotlinx.serialization.Serializable
 data class LunarClientModSettings(
-    val enabled: Boolean?,
-    val properties: Map<String, Boolean>?
+    val settings: Map<String, LunarClientModSetting>
 )
