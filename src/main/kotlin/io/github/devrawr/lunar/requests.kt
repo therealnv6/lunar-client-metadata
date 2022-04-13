@@ -1,5 +1,6 @@
 package io.github.devrawr.lunar
 
+import io.github.devrawr.lunar.model.LunarClientMetadata
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.json.Json
 import java.net.URL
@@ -31,3 +32,4 @@ object LunarMetadataRetriever
         )
     }
 }
+

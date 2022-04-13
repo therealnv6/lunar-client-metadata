@@ -1,4 +1,4 @@
-package io.github.devrawr.lunar.model.settings
+package io.github.devrawr.lunar.model.settings.mod
 
 import kotlinx.serialization.Serializable
 
@@ -7,7 +7,7 @@ import kotlinx.serialization.Serializable
  * @since 4/12/2022
  */
 @Serializable
-data class LunarClientModSettings(
+data class LunarClientModSetting(
     val enabled: Boolean = true,
-    val properties: Map<String, Boolean>?
+    val properties: Map<String, String> = mapOf()
 )

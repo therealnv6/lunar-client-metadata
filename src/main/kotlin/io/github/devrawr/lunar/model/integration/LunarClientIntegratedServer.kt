@@ -12,5 +12,6 @@ import kotlinx.serialization.Serializable
 data class LunarClientIntegratedServer(
     @SerialName("ip")
     val addresses: List<String>,
-    val modSettings: Map<String, LunarClientModSetting>
+    val modSettings: Map<String, LunarClientModSetting>,
+    val brand: String = "N/A"
 )
