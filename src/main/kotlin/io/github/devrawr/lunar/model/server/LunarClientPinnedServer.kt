@@ -1,12 +1,13 @@
 package io.github.devrawr.lunar.model.server
 
 import kotlinx.serialization.SerialName
+import kotlinx.serialization.Serializable
 
 /**
  * @author GrowlyX
  * @since 4/12/2022
  */
-@kotlinx.serialization.Serializable
+@Serializable
 data class LunarClientPinnedServer(
     val name: String,
     @SerialName("ip")
