@@ -1,5 +1,7 @@
 package io.github.devrawr.lunar.model
 
+import java.net.URL
+
 /**
  * The targeted endpoint's
  * server context.
@@ -7,10 +9,14 @@ package io.github.devrawr.lunar.model
  * @author GrowlyX
  * @since 4/12/2022
  */
-enum class LunarClientMetadataContext
+enum class LunarClientMetadataContext(val endpoint: URL)
 {
-    Prod, Dev;
-
-    val lowercase: String
-        get() = this.name.lowercase()
+    Prod("prod".lunarEndpoint),
+    Dev("dev".lunarEndpoint);
 }
+
+private val String.lunarEndpoint: URL
+    get()
+    {
+        return URL("https://api.lunarclient${this.lowercase()}.com/game/metadata")
+    }

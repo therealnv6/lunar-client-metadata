@@ -24,12 +24,7 @@ object LunarClientMetadataRetriever
         context: LunarClientMetadataContext
     ): String
     {
-        val url = LUNAR_METADATA_ENDPOINTS[context]
-            ?: throw IllegalArgumentException(
-                "No endpoint found by type of $context"
-            )
-
-        return url.readText()
+        return context.endpoint.readText()
     }
 
     /**
