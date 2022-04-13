@@ -9,7 +9,7 @@ import io.github.devrawr.lunar.model.sentry.SentryFilteredException
 import io.github.devrawr.lunar.model.server.LunarClientPinnedServer
 import io.github.devrawr.lunar.model.server.LunarClientStarredServer
 import io.github.devrawr.lunar.model.settings.LunarClientClientSettings
-import io.github.devrawr.lunar.model.settings.mod.LunarClientModSettings
+import io.github.devrawr.lunar.model.settings.mod.LunarClientModSetting
 import io.github.devrawr.lunar.model.store.LunarClientStoreState
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
@@ -22,7 +22,7 @@ import kotlinx.serialization.Serializable
 data class LunarClientMetadata(
     val blogPosts: List<LunarClientBlogPost>,
     // settings
-    val modSettings: Map<String, LunarClientModSettings>,
+    val modSettings: Map<String, LunarClientModSetting>,
     val clientSettings: Map<String, LunarClientClientSettings>,
     // servers
     val pinnedServers: List<LunarClientPinnedServer>,
