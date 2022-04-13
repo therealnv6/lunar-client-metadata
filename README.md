@@ -25,6 +25,7 @@ For more possible use cases, take a look at the data provided in our [LunarClien
 
 ## Notice:
 Lunar Client's developers may decide to restrict access to this endpoint as this was never intended to be exposed to the public. **This project may not work in the future.**
+ - In addition to this, the content returned from the metadata endpoint may change, so our mappings might not be accurate in the future.
 
 ## Authors:
 - [@GrowlyX](https://github.com/GrowlyX)
