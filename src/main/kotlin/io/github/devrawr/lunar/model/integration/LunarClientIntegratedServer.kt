@@ -1,6 +1,6 @@
 package io.github.devrawr.lunar.model.integration
 
-import io.github.devrawr.lunar.model.settings.mod.LunarClientModSettings
+import io.github.devrawr.lunar.model.settings.mod.LunarClientModSetting
 import kotlinx.serialization.SerialName
 
 /**
@@ -11,5 +11,5 @@ import kotlinx.serialization.SerialName
 data class LunarClientIntegratedServer(
     @SerialName("ip")
     val addresses: List<String>,
-    val modSettings: LunarClientModSettings
+    val modSettings: Map<String, LunarClientModSetting>
 )
