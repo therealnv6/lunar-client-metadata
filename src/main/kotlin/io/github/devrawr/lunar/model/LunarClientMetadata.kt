@@ -60,4 +60,17 @@ data class LunarClientMetadata(
                 .readMetadata(context)
         }
     }
+
+    /**
+     * Retrieves the latest blog post.
+     *
+     * Since our blog posts are ordered
+     * by its creation date descending,
+     * we can return the first index of
+     * [blogPosts].
+     */
+    fun getLatestBlogPost(): LunarClientBlogPost
+    {
+        return blogPosts.first()
+    }
 }
