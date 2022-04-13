@@ -27,7 +27,8 @@ data class LunarClientModSetting(
  * Usually, this should be fine. But considering the [LunarClientModSetting.properties] field
  * within the metadata api can be several types, we need it to support Any.
  *
- * For more information on this, look into the https://api.lunarclientprod.com/game/metadata
+ * For more information on this, look into the production metadata endpoint:
+ * https://api.lunarclientprod.com/game/metadata
  */
 class LunarClientModAnySerializer : KSerializer<Any>
 {
