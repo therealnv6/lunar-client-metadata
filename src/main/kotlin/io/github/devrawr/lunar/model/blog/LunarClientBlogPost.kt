@@ -1,5 +1,7 @@
 package io.github.devrawr.lunar.model.blog
 
+import kotlinx.serialization.SerialName
+
 /**
  * @author GrowlyX
  * @since 4/12/2022
@@ -10,6 +12,6 @@ data class LunarClientBlogPost(
     val author: String,
     val image: String,
     val excerpt: String,
-    // TODO: 4/12/2022 @SerializedName("link")
+    @SerialName("link")
     val twitterPost: String
 )

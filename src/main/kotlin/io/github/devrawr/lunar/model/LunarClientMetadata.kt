@@ -9,6 +9,7 @@ import io.github.devrawr.lunar.model.server.LunarClientStarredServer
 import io.github.devrawr.lunar.model.settings.LunarClientClientSettings
 import io.github.devrawr.lunar.model.settings.LunarClientModSettings
 import io.github.devrawr.lunar.model.store.LunarClientStoreState
+import kotlinx.serialization.SerialName
 
 /**
  * @author GrowlyX
@@ -23,11 +24,14 @@ data class LunarClientMetadata(
     // servers
     val pinnedServers: List<LunarClientPinnedServer>,
     val starServers: List<LunarClientStarredServer>,
-    val serverIntegration: List<LunarClientIntegratedServer>,
+    @SerialName("serverIntegration")
+    val integratedServers: List<LunarClientIntegratedServer>,
     val knownServersHash: String,
     // features
-    val featureFlag: List<LunarClientFeatureFlag>,
+    @SerialName("featureFlag")
+    val featureFlags: List<LunarClientFeatureFlag>,
     // misc
-    val store: LunarClientStoreState,
+    @SerialName("store")
+    val storeState: LunarClientStoreState,
     val sentryFilteredExceptions: List<SentryFilteredException>
 )

@@ -1,6 +1,7 @@
 package io.github.devrawr.lunar.model.integration
 
 import io.github.devrawr.lunar.model.settings.LunarClientModSettings
+import kotlinx.serialization.SerialName
 
 /**
  * @author GrowlyX
@@ -8,6 +9,7 @@ import io.github.devrawr.lunar.model.settings.LunarClientModSettings
  */
 @kotlinx.serialization.Serializable
 data class LunarClientIntegratedServer(
-    val ip: List<String>,
+    @SerialName("ip")
+    val addresses: List<String>,
     val modSettings: LunarClientModSettings
 )
