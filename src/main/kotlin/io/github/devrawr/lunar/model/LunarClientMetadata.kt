@@ -52,7 +52,8 @@ data class LunarClientMetadata(
          */
         @JvmStatic
         fun parseMetadata(
-            context: LunarClientMetadataContext
+            context: LunarClientMetadataContext =
+                LunarClientMetadataContext.Prod
         ): LunarClientMetadata
         {
             return LunarMetadataRetriever
