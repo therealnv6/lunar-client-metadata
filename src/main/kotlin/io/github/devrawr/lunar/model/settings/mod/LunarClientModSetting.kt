@@ -8,6 +8,6 @@ import kotlinx.serialization.Serializable
  */
 @Serializable
 data class LunarClientModSettings(
-    val enabled: Boolean?,
+    val enabled: Boolean = true,
     val properties: Map<String, Boolean>?
 )

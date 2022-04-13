@@ -1,6 +1,6 @@
 package io.github.devrawr.lunar.model.integration
 
-import io.github.devrawr.lunar.model.settings.LunarClientModSettings
+import io.github.devrawr.lunar.model.settings.mod.LunarClientModSettings
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 

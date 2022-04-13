@@ -9,7 +9,7 @@ import io.github.devrawr.lunar.model.sentry.SentryFilteredException
 import io.github.devrawr.lunar.model.server.LunarClientPinnedServer
 import io.github.devrawr.lunar.model.server.LunarClientStarredServer
 import io.github.devrawr.lunar.model.settings.LunarClientClientSettings
-import io.github.devrawr.lunar.model.settings.LunarClientModSettings
+import io.github.devrawr.lunar.model.settings.mod.LunarClientModSettings
 import io.github.devrawr.lunar.model.store.LunarClientStoreState
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
