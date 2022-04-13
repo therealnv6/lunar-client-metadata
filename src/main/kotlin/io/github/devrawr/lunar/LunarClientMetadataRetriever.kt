@@ -3,12 +3,11 @@ package io.github.devrawr.lunar
 import io.github.devrawr.lunar.model.LunarClientMetadataContext
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.json.Json
-import java.net.URL
 
 object LunarClientMetadataRetriever
 {
     /**
-     * Read the metadata from the [LUNAR_METADATA_ENDPOINTS] endpoint.
+     * Read the metadata from the [context]'s endpoint.
      *
      * This method simply reads from the endpoint and returns
      * it as a string.
@@ -28,7 +27,7 @@ object LunarClientMetadataRetriever
     }
 
     /**
-     * Read the metadata from the [LUNAR_METADATA_ENDPOINTS] endpoint.
+     * Read the metadata from the [context]'s endpoint.
      *
      * This method will automatically try to parse the
      * retrieved data from the server using the provided

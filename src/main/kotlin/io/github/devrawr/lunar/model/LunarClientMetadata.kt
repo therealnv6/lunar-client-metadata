@@ -46,7 +46,7 @@ data class LunarClientMetadata(
          * This method calls the [LunarClientMetadataRetriever.readMetadata] method
          * with [LunarClientMetadata] as type parameter.
          *
-         * This original method reads the metadata from the [LUNAR_METADATA_ENDPOINT]
+         * This original method reads the metadata from the [context]'s
          * endpoint URL, which contains all data required to fill this class.
          */
         @JvmStatic
