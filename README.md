@@ -1,9 +1,6 @@
 # lunar-client-metadata
 An easy-to-use wrapper for Lunar Client's game api.
 
-## Importing:
-Our project is available on [jitpack](https://jitpack.io).
-
 ### Maven
 <details>
   <summary>pom.xml</summary>
