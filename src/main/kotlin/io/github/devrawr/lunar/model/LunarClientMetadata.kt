@@ -2,6 +2,7 @@ package io.github.devrawr.lunar.model
 
 import io.github.devrawr.lunar.model.blog.LunarClientBlogPost
 import io.github.devrawr.lunar.model.feature.LunarClientFeatureFlag
+import io.github.devrawr.lunar.model.integration.LunarClientIntegratedServer
 import io.github.devrawr.lunar.model.sentry.SentryFilteredException
 import io.github.devrawr.lunar.model.server.LunarClientPinnedServer
 import io.github.devrawr.lunar.model.server.LunarClientStarredServer
@@ -19,14 +20,14 @@ data class LunarClientMetadata(
     // settings
     val modSettings: Map<String, LunarClientModSettings>,
     val clientSettings: Map<String, LunarClientClientSettings>,
-    // partnered servers
+    // servers
     val pinnedServers: List<LunarClientPinnedServer>,
     val starServers: List<LunarClientStarredServer>,
-
-    val featureFlag: List<LunarClientFeatureFlag>,
-
+    val serverIntegration: List<LunarClientIntegratedServer>,
     val knownServersHash: String,
+    // features
+    val featureFlag: List<LunarClientFeatureFlag>,
+    // misc
     val store: LunarClientStoreState,
-
     val sentryFilteredExceptions: List<SentryFilteredException>
 )
