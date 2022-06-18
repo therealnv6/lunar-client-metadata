@@ -2,7 +2,6 @@ package io.github.devrawr.lunar
 
 import io.github.devrawr.lunar.model.LunarClientMetadataContext
 import kotlinx.serialization.decodeFromString
-import kotlinx.serialization.json.Json
 
 object LunarClientMetadataRetriever
 {
@@ -41,7 +40,7 @@ object LunarClientMetadataRetriever
         context: LunarClientMetadataContext
     ): T
     {
-        return Json.decodeFromString(
+        return json.decodeFromString(
             readMetadataAsText(context)
         )
     }
